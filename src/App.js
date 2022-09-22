@@ -1,5 +1,4 @@
 import './App.css';
-import {Button} from "react-bootstrap";
 import {useEffect, useState} from "react";
 import SearchPokemon from "./SearchPokemon/SearchPokemon";
 import Pokemon from "./Pokemon/Pokemon";
@@ -12,7 +11,9 @@ const App = () => {
 
 
     useEffect(() => {
+
         requestPokemon();
+        // eslint-disable-next-line
     }, []);
 
 
@@ -28,9 +29,9 @@ const App = () => {
 
     return (
         <div>
-           <header>
-               <h1 style={{fontFamily:'Pokemon-hollow', textAlign:'center'}} >PoKeMoN</h1>
-           </header>
+            <header>
+                <h1 style={{fontFamily: 'Pokemon-hollow', textAlign: 'center'}}>PoKeMoN</h1>
+            </header>
             <div>
                 <div className="container">
                     <SearchPokemon

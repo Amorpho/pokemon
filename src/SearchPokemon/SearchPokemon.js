@@ -1,4 +1,4 @@
-import {Button} from "react-bootstrap";
+import {Button} from "@mui/material";
 
 const SearchPokemon = (props) => {
     return (
@@ -7,7 +7,7 @@ const SearchPokemon = (props) => {
                 className="form-control"
                 onChange={props.inputValue}
                 type="text"/>
-            <Button onClick={props.onClick} >Search</Button>
+            <Button onClick={props.onClick} variant="contained">Search </Button>
         </div>
     )
 }
